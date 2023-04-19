@@ -30,7 +30,7 @@
   nav
 </nav>
 <div class="bg-gray-100 h-full w-full space-y-4 flex flex-col items-center py-4">
-  <div class="p-6 shadow-lg w-3/4 rounded-lg h-full bg-white">
+  <div class="p-6 shadow-lg rounded-lg h-full bg-white w-full xxs:w-4/5 sm:max-w-md md:max-w-xl">
     <form class="space-y-4" id="form-data">
       <div>
         <label for="rut" class="block mb-2 text-sm font-medium text-gray-900 ">Rut</label>
@@ -117,7 +117,8 @@
       </div>
 
       <div>
-        <label for="motivacion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Motivacion</label>
+        <label for="motivacion"
+               class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Motivacion</label>
         <textarea id="motivacion" rows="4"
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
         <div id="motivacion-warning" class="mt-3 text-red-500 hidden">Debe ingresar almenos 1 caracter</div>
@@ -132,7 +133,7 @@
     </form>
   </div>
 
-  <div class="p-6 shadow-lg w-3/4 rounded-lg h-full bg-white">
+  <div class="p-6 shadow-lg rounded-lg h-full bg-white w-full xxs:w-4/5 sm:max-w-md md:max-w-xl">
     <form class="space-y-4" id="form-carta">
       <button type="submit"
               id="carta-submit"
