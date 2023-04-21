@@ -188,14 +188,13 @@ function checkCelular() {
 
 function checkNacimiento() {
     const nacimiento = new Date(nacimientoId.value)
-    if(nacimiento < new Date()){
+    if (nacimiento < new Date()) {
         nacimientoId.classList.add(...fieldValid)
         nacimientoWarning.classList.add(...fieldWarningValid)
         nacimientoId.classList.remove(...fieldInvalid)
         nacimientoWarning.classList.remove(...fieldWarningInvalid)
         return true
-    }
-    else {
+    } else {
         nacimientoId.classList.add(...fieldInvalid)
         nacimientoWarning.classList.add(...fieldWarningInvalid)
         nacimientoId.classList.remove(...fieldValid)
@@ -330,6 +329,21 @@ datosSubmit.addEventListener("click", () => {
 // form events
 formData.addEventListener("submit", (e) => {
     e.preventDefault()
+    if (checkAll()) {
+        Swal.fire(
+            'Bien hecho!',
+            'Se ha enviando con exito',
+            'success'
+        )
+    }
+    else{
+        Swal.fire(
+            'Error!',
+            'Revisa el formulario',
+            'error'
+        )
+        return
+    }
     formData.reset()
 })
 formCarta.addEventListener("submit", (e) => {
@@ -339,9 +353,19 @@ formCarta.addEventListener("submit", (e) => {
     if (checkAll()) {
         cartaWarning.classList.add(...fieldWarningValid)
         cartaWarning.classList.remove(...fieldWarningInvalid)
+        Swal.fire(
+            'Bien hecho!',
+            'Se ha generado tu carta',
+            'success'
+        )
     } else {
         cartaWarning.classList.add(...fieldWarningInvalid)
         cartaWarning.classList.remove(...fieldWarningValid)
+        Swal.fire(
+            'Error!',
+            'El formulario debe de estar completo para crear la carta de presentacion',
+            'error'
+        )
         return
     }
 
