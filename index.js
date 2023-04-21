@@ -279,46 +279,46 @@ function checkAll() {
 }
 
 // events
-rutId.addEventListener("input", () => {
+rutId.addEventListener("focusout", () => {
     checkRut()
 })
 
-nombreId.addEventListener("input", () => {
+nombreId.addEventListener("focusout", () => {
     checkNombre()
 })
 
-paternoId.addEventListener("input", () => {
+paternoId.addEventListener("focusout", () => {
     checkPaterno()
 })
 
-maternoId.addEventListener("input", () => {
+maternoId.addEventListener("focusout", () => {
     checkMaterno()
 })
 
-edadId.addEventListener("input", () => {
+edadId.addEventListener("focusout", () => {
     checkEdad()
 })
 
-generoId.addEventListener("input", () => {
+generoId.addEventListener("focusout", () => {
     checkGenero()
 })
 
-celularId.addEventListener("input", () => {
+celularId.addEventListener("focusout", () => {
     checkCelular()
 })
-nacimientoId.addEventListener("input", () => {
+nacimientoId.addEventListener("focusout", () => {
     checkNacimiento()
 })
 
-emailId.addEventListener("input", () => {
+emailId.addEventListener("focusout", () => {
     checkEmail()
 })
 
-profesionId.addEventListener("input", () => {
+profesionId.addEventListener("focusout", () => {
     checkProfesion()
 })
 
-motivacionId.addEventListener("input", () => {
+motivacionId.addEventListener("focusout", () => {
     checkMotivacion()
 })
 
