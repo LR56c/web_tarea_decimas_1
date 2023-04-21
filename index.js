@@ -330,18 +330,18 @@ datosSubmit.addEventListener("click", () => {
 formData.addEventListener("submit", (e) => {
     e.preventDefault()
     if (checkAll()) {
-        Swal.fire(
-            'Bien hecho!',
-            'Se ha enviando con exito',
-            'success'
-        )
+        // Swal.fire(
+        //     'Bien hecho!',
+        //     'Se ha enviando con exito',
+        //     'success'
+        // )
     }
     else{
-        Swal.fire(
-            'Error!',
-            'Revisa el formulario',
-            'error'
-        )
+        // Swal.fire(
+        //     'Error!',
+        //     'Revisa el formulario',
+        //     'error'
+        // )
         return
     }
     formData.reset()
@@ -353,19 +353,19 @@ formCarta.addEventListener("submit", (e) => {
     if (checkAll()) {
         cartaWarning.classList.add(...fieldWarningValid)
         cartaWarning.classList.remove(...fieldWarningInvalid)
-        Swal.fire(
-            'Bien hecho!',
-            'Se ha generado tu carta',
-            'success'
-        )
+        // Swal.fire(
+        //     'Bien hecho!',
+        //     'Se ha generado tu carta',
+        //     'success'
+        // )
     } else {
         cartaWarning.classList.add(...fieldWarningInvalid)
         cartaWarning.classList.remove(...fieldWarningValid)
-        Swal.fire(
-            'Error!',
-            'El formulario debe de estar completo para crear la carta de presentacion',
-            'error'
-        )
+        // Swal.fire(
+        //     'Error!',
+        //     'El formulario debe de estar completo para crear la carta de presentacion',
+        //     'error'
+        // )
         return
     }
 
